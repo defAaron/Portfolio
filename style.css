@@ -361,3 +361,26 @@
   .project-card { padding: 18px; border-radius: 12px; }
   .section-title { font-size: 1.25rem; }
 }
+
+/* All links */
+a {
+  color: #ffffff;       /* Text color for unvisited links */
+  text-decoration: none; /* Remove underline if desired */
+}
+
+/* When the link is hovered */
+a:hover {
+  color: #FFD700;       /* Golden/yellow on hover */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* When the link has been visited */
+a:visited {
+  color: #cccccc;       /* Light grey for visited links */
+}
+
+/* When the link is active (being clicked) */
+a:active {
+  color: #ff6600;       /* Orange for active */
+}
+
