@@ -383,3 +383,22 @@ a:visited {
 a:active {
   color: #1E90FF;       /* Darker blue when clicking */
 }
+
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 32px;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00bcd4; /* teal highlight */
+  transform: scale(1.2);
+}
