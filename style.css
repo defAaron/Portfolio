@@ -376,7 +376,7 @@ a:hover {
 
 /* Visited links */
 a:visited {
-  color: #01153E;       /* Keep visited links similar to hover or slightly different */
+  color: #5F9EA0;       /* Keep visited links similar to hover or slightly different */
 }
 
 /* Active (clicked) links */
