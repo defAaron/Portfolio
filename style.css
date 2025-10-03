@@ -364,23 +364,22 @@
 
 /* All links */
 a {
-  color: #ffffff;       /* Text color for unvisited links */
-  text-decoration: none; /* Remove underline if desired */
+  color: #ADD8E6;       /* Light blue for unvisited links */
+  text-decoration: none; /* Remove underline */
 }
 
-/* When the link is hovered */
+/* Hover effect */
 a:hover {
-  color: #FFD700;       /* Golden/yellow on hover */
-  text-decoration: underline; /* Optional: underline on hover */
+  color: #87CEFA;       /* Slightly brighter blue on hover */
+  text-decoration: underline; /* Optional underline on hover */
 }
 
-/* When the link has been visited */
+/* Visited links */
 a:visited {
-  color: #cccccc;       /* Light grey for visited links */
+  color: #87CEFA;       /* Keep visited links similar to hover or slightly different */
 }
 
-/* When the link is active (being clicked) */
+/* Active (clicked) links */
 a:active {
-  color: #ff6600;       /* Orange for active */
+  color: #1E90FF;       /* Darker blue when clicking */
 }
-
