@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Aaron Dutta</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header class="gallery-header">
+        <h1>Aaron Dutta</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="awards.html">Awards</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="projects.html">Projects</a>
+          
+            <div class="dropdown">
+              <button class="dropbtn">Gallery ▾</button>
+              <div class="dropdown-content">
+                <a href="gallery_auckland.html">Auckland Workshop</a>
+                <a href="gallery_drawings.html">Drawings</a>
+                <a href="gallery_france.html">France</a>
+                <a href="gallery_spain.html">Spain</a>
+              </div>
+            </div>
+          </nav>
+          
+    </header>
+      
+
+  <header class="hero-title">
+    <h1>Spain</h1>
+    <p class="hero-description">Locations: Barcelona, Montserrat, Seville</p>
+    <div class="scroll-arrow">▼</div>
+  </header>
+  
+
+  <main class="gallery-sections">
+  
+    <!-- 🌍 Travel Section -->
+    <section class="gallery-section">
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="spain/1.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/2.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/3.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/4.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/5.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/6.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/7.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/8.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/9.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/10.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/11.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/12.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/13.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/14.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/15.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/16.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/17.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/18.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/19.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/20.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/21.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/22.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/23.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/24.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/25.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/26.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/27.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/28.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/29.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/30.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/31.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/32.jpg" alt=""></div>
+        <div class="gallery-item"><img src="spain/33.jpg" alt=""></div>
+      </div>
+    </section>
+  
+      </div>
+    </section>
+  
+  </main>
+  
+
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const close = document.querySelector(".close");
+    document.querySelectorAll(".gallery-item img").forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+    close.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  </script>
+  
+</body>
+
+<canvas id="stars"></canvas>
+
+</html>

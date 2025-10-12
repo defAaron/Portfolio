@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Aaron Dutta</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header class="gallery-header">
+        <h1>Aaron Dutta</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="awards.html">Awards</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="projects.html">Projects</a>
+          
+            <div class="dropdown">
+              <button class="dropbtn">Gallery ▾</button>
+              <div class="dropdown-content">
+                <a href="gallery_auckland.html">Auckland Workshop</a>
+                <a href="gallery_drawings.html">Drawings</a>
+                <a href="gallery_france.html">France</a>
+                <a href="gallery_spain.html">Spain</a>
+              </div>
+            </div>
+          </nav>
+          
+    </header>
+      
+
+  <header class="hero-title">
+    <h1>Drawings</h1>
+    <p class="hero-description">A glimpse into my creative side!</p>
+    <div class="scroll-arrow">▼</div>
+  </header>
+  
+
+  <main class="gallery-sections">
+
+    <!-- 🎨 Drawings Section -->
+    <section class="gallery-section">
+
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="drawings/eye1.jpg" alt="Drawing 1"></div>
+        <div class="gallery-item"><img src="drawings/eye2.jpg" alt="Drawing 2"></div>
+        <div class="gallery-item"><img src="drawings/lips.jpg" alt="Drawing 3"></div>
+        <div class="gallery-item"><img src="drawings/foot.jpg" alt="Drawing 4"></div>
+        <div class="gallery-item"><img src="drawings/bird.jpg" alt="Drawing 5"></div>
+        <div class="gallery-item"><img src="drawings/feather.jpg" alt="Drawing 6"></div>
+        <div class="gallery-item"><img src="drawings/chicken.jpg" alt="Drawing 7"></div>
+        <div class="gallery-item"><img src="drawings/collage.jpg" alt="Drawing 8"></div>
+        <div class="gallery-item"><img src="drawings/ladybug.jpg" alt="Drawing 9"></div>
+        <div class="gallery-item"><img src="drawings/lemon_slices.jpg" alt="Drawing 10"></div>
+        <div class="gallery-item"><img src="drawings/vase.jpg" alt="Drawing 11"></div>
+        <div class="gallery-item"><img src="drawings/beach.jpg" alt="Drawing 12"></div>
+        <div class="gallery-item"><img src="drawings/apple.jpg" alt="Drawing 13"></div>
+        <div class="gallery-item"><img src="drawings/will.jpg" alt="Drawing 14"></div>
+        <div class="gallery-item"><img src="drawings/tiger.jpg" alt="Drawing 15"></div>
+        <div class="gallery-item"><img src="drawings/plains.jpg" alt="Drawing 16"></div>
+        <div class="gallery-item"><img src="drawings/lemon.jpg" alt="Drawing 17"></div>
+        <div class="gallery-item"><img src="drawings/skyscraper.jpg" alt="Drawing 18"></div>
+        <div class="gallery-item"><img src="drawings/ganesh.jpg" alt="Drawing 19"></div>
+        <!-- add more drawings -->
+      </div>
+    </section>
+  </main>
+  
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const close = document.querySelector(".close");
+    document.querySelectorAll(".gallery-item img").forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+    close.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  </script>
+  
+</body>
+
+<canvas id="stars"></canvas>
+
+</html>
