@@ -669,3 +669,13 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* ===== Global Link Styling (Consistent Light Blue Underlined) ===== */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #3881d4;          /* light blue */
+  text-decoration: underline;  /* always underlined */
+  transition: none;            /* no fade animations */
+}
